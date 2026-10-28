@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Blog{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Cabecera exclusiva del módulo -->
+    <header class="bg-indigo-600 text-white p-4 shadow">
+        <div class="container mx-auto flex justify-between items-center">
+            <span class="font-bold text-lg">MI BLOG</span>
+            
+        </div>
+    </header>
+
+    <!-- Contenido dinámico del módulo -->
+    <main class="container mx-auto mt-8 max-w-2xl p-6 bg-white shadow-md rounded-lg">
+        {% block content %}
+        <h2>
+            ========TODOS MIS BLOGS======== 
+        </h2>
+        <br>
+    <ul>
+        <li>TECNOLOGIAS EMERGENTES</li>
+        <li>INGENIERIA DE REDES</li>
+        <li>INGENIERIA DE SISTEMAS</li>
+        <li>LEGAL Y ETICA</li>
+        <li>INGENIERIA ECONOMICA</li>
+    </ul>
+        {% endblock %}
+    </main>
+
+    <!-- Pie de página del módulo -->
+    <footer class="text-center py-6 text-gray-400 text-xs mt-12">
+        Tecnologias emergentes - 2026
+    </footer>
+
+</body>
+</html>

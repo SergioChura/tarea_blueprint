@@ -1,0 +1,18 @@
+{% extends "block/base_block.html" %}
+
+{% block title %}{{ titulo }}{% endblock %}
+
+{% block content %}
+<article class="space-y-4">
+    <header class="border-b pb-4">
+        <h1 class="text-3xl font-bold text-gray-900">{{ titulo }}</h1>
+        <span class="text-xs text-indigo-500 font-semibold uppercase tracking-wider">Artículo del Blog</span>
+    </header>
+    
+    <div class="text-gray-700 leading-relaxed text-lg">
+        <p>{{ contenido }}</p>
+    </div>
+
+    
+</article>
+{% endblock %}
